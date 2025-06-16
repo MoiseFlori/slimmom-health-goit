@@ -1,4 +1,4 @@
-import  { useEffect, useState, useRef } from "react";
+import { useEffect, useState, useRef } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import axios from "../../utils/axiosConfig";
@@ -10,11 +10,14 @@ import { useDispatch } from "react-redux";
 import { setConsumed, setDate } from "../../redux/dailyCalories/caloriesSlice";
 import { useMediaQuery } from "react-responsive";
 import ProductForm from "./ProductForm";
+import { useSelector } from "react-redux";
 
 const Diary = () => {
   const location = useLocation();
   const navigate = useNavigate();
   const dispatch = useDispatch();
+  const token = useSelector((state) => state.auth.token);
+
   const calendarRef = useRef(null);
 
   const isMobile = useMediaQuery({ maxWidth: 767 });
@@ -54,8 +57,10 @@ const Diary = () => {
   };
 
   useEffect(() => {
+    if (!token) return; 
+
     fetchDiary();
-  }, [apiDate, dispatch]);
+  }, [apiDate, token, dispatch]);
 
   const handleDelete = async (id) => {
     try {

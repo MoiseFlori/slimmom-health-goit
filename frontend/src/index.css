@@ -1,2 +1,7 @@
 @import './styles/reset.css';
 @import "./styles/variables.css";
+
+.no-scroll {
+  overflow: hidden;
+  height: 100vh;
+}

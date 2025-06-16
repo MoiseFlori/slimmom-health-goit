@@ -4,11 +4,10 @@ const instance = axios.create({
   baseURL: import.meta.env.VITE_API_URL,
 });
 
-// NU mai importa store aici! Fără require(), fără import direct.
-
 export const setAuthToken = (token) => {
   if (token) {
-    instance.defaults.headers.common["Authorization"] = `Bearer ${token}`;
+    const authHeader = `Bearer ${token}`;
+    instance.defaults.headers.common["Authorization"] = authHeader;
   } else {
     delete instance.defaults.headers.common["Authorization"];
   }

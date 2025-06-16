@@ -98,6 +98,7 @@
   }
 
   .primaryBtn {
+    white-space: nowrap;
     padding: 13px 50px;
   }
 

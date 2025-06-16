@@ -9,10 +9,9 @@ import shadow2x from "../../assets/shadow2x.png";
 import strawberry from "../../assets/strawberry.png";
 import strawberry2x from "../../assets/strawberry2x.png";
 
-
-const ImagesContainer = () => {
+const ImagesContainer = ({ variant = "home" }) => {
   return (
-    <div className={styles.imagesContainer}>
+    <div className={`${styles.imagesContainer} ${styles[variant]}`}>
       <picture>
         <source srcSet={`${banana} 1x, ${banana2x} 2x`} />
         <img src={banana} alt="banana" className={styles.banana} />

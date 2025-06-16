@@ -10,17 +10,14 @@ const useLoadProfile = () => {
   const dispatch = useDispatch();
   const token = useSelector((state) => state.auth.token);
 
+
+
   useEffect(() => {
     if (!token) return;
 
     const fetchProfile = async () => {
       try {
-        const res = await axios.get("/users/profile", {
-          headers: {
-            Authorization: `Bearer ${token}`,
-          },
-        });
-
+        const res = await axios.get("/users/profile");
         const { dailyRate, blood } = res.data;
 
         if (dailyRate) dispatch(setDailyRate(dailyRate));

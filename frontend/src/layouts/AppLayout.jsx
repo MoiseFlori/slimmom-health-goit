@@ -7,6 +7,7 @@ import { useSelector } from "react-redux";
 import styles from "./AppLayout.module.css";
 import leaves from "../assets/leaves.png";
 import leaves2x from "../assets/leaves2x.png";
+import ImagesContainer from "../components/hero/ImagesContainer";
 
 const AppLayout = () => {
   const user = useSelector((state) => state.auth.user);

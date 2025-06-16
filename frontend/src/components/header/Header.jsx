@@ -1,5 +1,4 @@
-import { useSelector, useDispatch } from "react-redux";
-import { logout } from "../../redux/authSlice";
+import { useSelector } from "react-redux";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import styles from "./Header.module.css";
@@ -12,7 +11,7 @@ import logoDesktop from "../../assets/logo-desktop.png";
 import logoDesktop2x from "../../assets/logo-desktop@2x.png";
 import UserMenu from "../menu/UserMenu.jsx";
 import { ReactComponent as BurgerMenu } from "../../assets/burger-menu.svg";
-
+import { useEffect } from "react";
 import { useMediaQuery } from "react-responsive";
 import { ReactComponent as CloseIcon } from "../../assets/close-icon.svg";
 
@@ -21,7 +20,16 @@ const Header = () => {
   const isDesktop = useMediaQuery({ minWidth: 1024 });
 
   const [menuOpen, setMenuOpen] = useState(false);
+  useEffect(() => {
+    if (menuOpen) {
+      document.body.classList.add("no-scroll");
+    } else {
+      document.body.classList.remove("no-scroll");
+    }
 
+    return () => document.body.classList.remove("no-scroll");
+  }, [menuOpen]);
+  
   return (
     <header className={styles.header}>
       <div className={styles.headerContainer}>
