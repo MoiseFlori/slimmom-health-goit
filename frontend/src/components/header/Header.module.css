@@ -26,9 +26,15 @@
   letter-spacing: 4%;
   text-align: right;
   text-transform: uppercase;
+  text-decoration: none;
   color: var(--text-color);
-  z-index: 500;
+  z-index: 999;
 
+}
+
+.loginLink,
+.registerLink {
+  color: var(--text-color);
 }
 
 .headerLinks a:hover,

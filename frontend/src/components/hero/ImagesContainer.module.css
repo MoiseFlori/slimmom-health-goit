@@ -39,7 +39,7 @@
 
   .login .banana {
     position: absolute;
-    width: clamp(350px, 38vw, 364px);
+    width: clamp(250px, 38vw, 264px);
     top: 150vh;
     right: 0;
     z-index: 998;
@@ -185,7 +185,7 @@
 
   .login .banana {
     position: absolute;
-    width: clamp(740px, 28vw, 773px);
+    width: clamp(640px, 28vw, 773px);
     top: -5vh;
     right: 0;
     z-index: 998;
