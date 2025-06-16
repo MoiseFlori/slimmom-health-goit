@@ -1,4 +1,4 @@
-// authThunk.js
+
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "../utils/axiosConfig";
 
@@ -16,6 +16,7 @@ export const registerUser = createAsyncThunk(
     }
   }
 );
+
 export const loginUser = createAsyncThunk(
   "auth/loginUser",
   async (formData, { rejectWithValue }) => {
@@ -27,7 +28,7 @@ export const loginUser = createAsyncThunk(
     } catch (error) {
    
       return rejectWithValue(
-        error.response?.data?.message || "Eroare la login"
+        error.response?.data?.message || "Login Error"
       );
     }
   }
