@@ -1,14 +1,14 @@
 // authThunk.js
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "../utils/axiosConfig";
-import { setUser } from "./authSlice";
+
 
 export const registerUser = createAsyncThunk(
   "auth/registerUser",
   async (formData, { rejectWithValue }) => {
     try {
       await axios.post("http://localhost:3000/users/signup", formData);
-      // Nu returnăm user/token aici, pentru că după signup nu facem login direct
+     
       return true;
     } catch (error) {
       return rejectWithValue(
@@ -25,7 +25,7 @@ export const loginUser = createAsyncThunk(
         "http://localhost:3000/users/login",
         formData
       );
-      return res.data; // returnăm token + user
+      return res.data; 
     } catch (error) {
       return rejectWithValue(
         error.response?.data?.message || "Eroare la login"
