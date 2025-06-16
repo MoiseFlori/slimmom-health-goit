@@ -40,7 +40,6 @@ const Diary = () => {
     dispatch(setDate(apiDate));
   }, [selectedDate, dispatch]);
 
-
   const fetchDiary = async () => {
     try {
       const res = await axios.get(`/api/diary?date=${apiDate}`);
@@ -93,7 +92,6 @@ const Diary = () => {
         />
       </div>
 
-     
       {isTabletOrAbove && (
         <ProductForm inlineDate={apiDate} onProductAdded={fetchDiary} />
       )}

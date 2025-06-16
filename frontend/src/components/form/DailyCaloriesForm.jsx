@@ -12,7 +12,7 @@ import {
   setNotAllowedFoods,
 } from "../../redux/dailyCalories/caloriesSlice";
 
-import axios from "axios";
+import axios from "../../utils/axiosConfig";
 
 const schema = yup.object().shape({
   height: yup

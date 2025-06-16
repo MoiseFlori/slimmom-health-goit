@@ -4,7 +4,7 @@ import {
   setDailyRate,
   setNotAllowedFoods,
 } from "../redux/dailyCalories/caloriesSlice";
-import axios from "axios";
+import axios from "../utils/axiosConfig";
 
 const useLoadProfile = () => {
   const dispatch = useDispatch();

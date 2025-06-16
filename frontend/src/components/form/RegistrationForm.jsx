@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import axios from "axios";
 import styles from "./RegistrationForm.module.css";
 import { useDispatch } from "react-redux";
-import {registerUser }from "../../redux/authThunk";
+import { registerUser } from "../../redux/authThunk";
 
 const RegistrationForm = () => {
   const navigate = useNavigate();
