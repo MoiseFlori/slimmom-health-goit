@@ -70,7 +70,7 @@ const DailyCaloriesForm = () => {
     try {
       // update user profile in DB
       await axios.patch(
-        "http://localhost:3000/users/profile",
+        "/users/profile",
         {
           height: parsedHeight,
           age: parsedAge,
@@ -87,7 +87,7 @@ const DailyCaloriesForm = () => {
       );
 
       const res = await axios.get(
-        `http://localhost:3000/api/products/not-recommended/${blood}`
+        `/api/products/not-recommended/${blood}`
       );
       setNotRecommendedFoods(res.data);
       dispatch(setNotAllowedFoods(res.data));

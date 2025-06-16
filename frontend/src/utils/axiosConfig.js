@@ -4,15 +4,14 @@ const instance = axios.create({
   baseURL: import.meta.env.VITE_API_URL,
 });
 
-instance.interceptors.request.use((config) => {
-  // Lazy import pentru a evita circular import
-  const { store } = require("../redux/store");
+// NU mai importa store aici! Fără require(), fără import direct.
 
-  const token = store.getState().auth.token;
+export const setAuthToken = (token) => {
   if (token) {
-    config.headers.Authorization = `Bearer ${token}`;
+    instance.defaults.headers.common["Authorization"] = `Bearer ${token}`;
+  } else {
+    delete instance.defaults.headers.common["Authorization"];
   }
-  return config;
-});
+};
 
 export default instance;

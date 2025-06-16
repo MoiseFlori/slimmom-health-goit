@@ -6,8 +6,17 @@ import Register from "./pages/Register";
 import Diary from "./components/diary/Diary";
 import ProductForm from "./components/diary/ProductForm";
 import PrivateRoute from "./components/private/PrivateRoute";
+import { useEffect } from "react";
+import { useSelector } from "react-redux";
+import { setAuthToken } from "./utils/axiosConfig"; // sau calea corectă
 
 function App() {
+  const token = useSelector((state) => state.auth.token);
+
+  useEffect(() => {
+    setAuthToken(token); 
+  }, [token]);
+
   return (
     <BrowserRouter>
       <Routes>
@@ -39,4 +48,5 @@ function App() {
     </BrowserRouter>
   );
 }
+
 export default App;

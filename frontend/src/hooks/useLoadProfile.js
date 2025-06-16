@@ -15,7 +15,7 @@ const useLoadProfile = () => {
 
     const fetchProfile = async () => {
       try {
-        const res = await axios.get("http://localhost:3000/users/profile", {
+        const res = await axios.get("/users/profile", {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -27,7 +27,7 @@ const useLoadProfile = () => {
 
         if (blood) {
           const foodRes = await axios.get(
-            `http://localhost:3000/api/products/not-recommended/${blood}`
+            `/api/products/not-recommended/${blood}`
           );
           dispatch(setNotAllowedFoods(foodRes.data));
         }
