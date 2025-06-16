@@ -39,7 +39,7 @@
 
   .login .banana {
     position: absolute;
-    width: clamp(250px, 38vw, 264px);
+    width: clamp(350px, 38vw, 264px);
     top: 150vh;
     right: 0;
     z-index: 998;
@@ -107,7 +107,7 @@
   }
 
   .login.imagesContainer {
-    height: 100vh;
+    height: 70vh;
     overflow: visible;
   }
 
@@ -119,10 +119,10 @@
 
   .login .banana {
     position: absolute;
-    width: clamp(350px, 28vw, 364px);
-    top: -25vh;
+    width: clamp(450px, 28vw, 464px);
+    top: -20vh;
     right: 0;
-    z-index: 998;
+    z-index: 999;
   }
 
   .home .strawberry {
@@ -134,7 +134,7 @@
   .login .strawberry {
     position: absolute;
     width: clamp(300px, 25vw, 398px);
-    top: 75%;
+    top: 45%;
     right: -40px;
     z-index: 998;
   }
@@ -148,10 +148,10 @@
 
   .login .leaves {
     position: absolute;
-    width: clamp(750px, 80vw, 831px);
+    width: clamp(650px, 80vw, 731px);
     top: -20vh;
-    left: 10vw;
-    z-index: 997;
+    left: 14vw;
+    z-index: 990;
     transform: rotate(-90deg);
   }
 
@@ -163,20 +163,15 @@
 
   .login .shadow {
     position: absolute;
-    width: clamp(480px, 80vw, 553px);
-    height: 870px;
-    top: -30vh;
+    width: clamp(480px, 80vw, 653px);
+    height: 550px;
+    top: 0vh;
     right: 0vw;
     z-index: 0;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .login.imagesContainer {
-    height: 100vh;
-    overflow: visible;
-  }
-
   .home .banana {
     top: -31vh;
     right: 0;
@@ -185,10 +180,10 @@
 
   .login .banana {
     position: absolute;
-    width: clamp(640px, 28vw, 773px);
-    top: -5vh;
+    width: clamp(450px, 28vw, 664px);
+    top: -30vh;
     right: 0;
-    z-index: 998;
+    z-index: 999;
   }
 
   .home .strawberry {
@@ -199,8 +194,8 @@
 
   .login .strawberry {
     position: absolute;
-    width: clamp(500px, 35vw, 598px);
-    top: 90%;
+    width: clamp(300px, 25vw, 398px);
+    top: 25%;
     right: -10px;
     z-index: 998;
   }
@@ -212,15 +207,15 @@
     width: 54vw;
   }
 
+
   .login .leaves {
     position: absolute;
-    width: clamp(860px, 80vw, 931px);
-    top: 10vh;
+    width: clamp(650px, 80vw, 731px);
+    top: -30vh;
     left: 30vw;
-    z-index: 997;
+    z-index: 990;
     transform: rotate(-90deg);
   }
-
 
   .home .shadow {
     top: -33vh;
@@ -230,9 +225,9 @@
 
   .login .shadow {
     position: absolute;
-    width: clamp(900px, 80vw, 1002px);
-    height: 1205px;
-    top: 20vh;
+    width: clamp(480px, 80vw, 653px);
+    height: 650px;
+    top: -20vh;
     right: 0vw;
     z-index: 0;
   }

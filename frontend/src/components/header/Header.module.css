@@ -28,7 +28,7 @@
   text-transform: uppercase;
   text-decoration: none;
   color: var(--text-color);
-  z-index: 999;
+  z-index: 9999;
 
 }
 
@@ -59,6 +59,7 @@
 
   .headerLinks {
     gap: 24px;
+    z-index: 999;
   }
 }
 

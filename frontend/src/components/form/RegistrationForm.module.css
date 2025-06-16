@@ -82,7 +82,13 @@
     left: 32px;
     align-items: flex-start;
     z-index: 300;
+    height: auto;
+    padding: 10px 20px;
 
+  }
+
+  .title {
+    margin-bottom: 20px;
   }
 
   .form {
