@@ -15,6 +15,7 @@ import { useEffect } from "react";
 import { useMediaQuery } from "react-responsive";
 import { ReactComponent as CloseIcon } from "../../assets/close-icon.svg";
 
+
 const Header = () => {
   const user = useSelector((state) => state.auth.user);
   const isDesktop = useMediaQuery({ minWidth: 1024 });
@@ -34,23 +35,24 @@ const Header = () => {
     <header className={styles.header}>
       <div className={styles.headerContainer}>
         <div className={styles.headerLogo}>
-          <picture>
-            <source
-              srcSet={`${logoDesktop} 1x, ${logoDesktop2x} 2x`}
-              media={`(min-width: ${theme.breakpoints.desktop})`}
-            />
-            <source
-              srcSet={`${logoTablet} 1x, ${logoTablet2x} 2x`}
-              media={`(min-width: ${theme.breakpoints.tablet}) and (max-width: 1279px)`}
-            />
-            <source
-              srcSet={`${logoMobile} 1x, ${logoMobile2x} 2x`}
-              media="(max-width: 767px)"
-            />
-            <img src={logoMobile} alt="logo" />
-          </picture>
+          <Link to="/">
+            <picture>
+              <source
+                srcSet={`${logoDesktop} 1x, ${logoDesktop2x} 2x`}
+                media={`(min-width: ${theme.breakpoints.desktop})`}
+              />
+              <source
+                srcSet={`${logoTablet} 1x, ${logoTablet2x} 2x`}
+                media={`(min-width: ${theme.breakpoints.tablet}) and (max-width: 1279px)`}
+              />
+              <source
+                srcSet={`${logoMobile} 1x, ${logoMobile2x} 2x`}
+                media="(max-width: 767px)"
+              />
+              <img src={logoMobile} alt="logo" />
+            </picture>
+          </Link>
         </div>
-
         <div className={styles.divider}></div>
 
         {!user ? (
@@ -80,7 +82,6 @@ const Header = () => {
             )}
           </div>
         )}
-        
       </div>
     </header>
   );
