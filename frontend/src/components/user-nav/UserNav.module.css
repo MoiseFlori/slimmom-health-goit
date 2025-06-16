@@ -1,0 +1,63 @@
+.userNav {
+  /* position: absolute; */
+  width: 320px;
+  height: 40px;
+  /* top: 81px; */
+  background-color: #EFF1F3;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 4px 20px;
+  gap: 14px;
+}
+
+.userName {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 4%;
+  text-align: right;
+}
+
+.divider {
+  width: 32px;
+  border: 1.5px solid #E0E0E0;
+  transform: rotate(-90deg);
+}
+
+.logoutBtn {
+  width: 32px;
+  height: 17px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 4%;
+  color: var(--text-color);
+}
+
+
+ @media screen and (min-width: 768px) {
+  .userNav {
+    position: absolute;
+    width: 184px;
+    height: 32px;
+    top: 23px;
+    left: 480px;
+    background: none;
+
+  }
+} 
+
+@media screen and (min-width: 1024px) {
+  .userNav {
+    position: absolute;
+    width: 184px;
+    height: 32px;
+    top: 131px;
+    right: 20px;
+    left: auto;
+    background-color: #f0f1f3;
+    z-index: 999;
+  }
+} 

@@ -1,0 +1,96 @@
+@media screen and (min-width: 768px) {
+  .imagesContainer {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 490px;
+
+
+  }
+
+  .banana {
+    position: absolute;
+    width: 364px;
+    height: auto;
+    top: 160px;
+    right: 0;
+    z-index: 4;
+
+  }
+
+  .strawberry {
+    position: absolute;
+    width: 298px;
+    height: 293px;
+    top: 5px;
+    right: 0px;
+    z-index: 3;
+  }
+
+  .leaves {
+    position: absolute;
+    width: 531px;
+    height: 602px;
+    top: -150px;
+    left: 170px;
+    z-index: 200;
+  }
+
+  .shadow {
+    position: absolute;
+    width: 553px;
+    height: 450px;
+    top: 30px;
+    right: -42px;
+    z-index: 0;
+    object-fit: cover;
+
+
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .imagesContainer {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .imagesContainer {
+    position: relative;
+    overflow: visible;
+    width: 100%;
+    height: 0;
+
+
+  }
+
+  .banana {
+    top: -250px;
+
+  }
+
+  .strawberry {
+    width: 350px;
+    height: 350px;
+    top: 180px;
+    right: 0;
+  }
+
+  .leaves {
+    width: 746px;
+    height: 846px;
+    top: -350px;
+    right: 0px;
+    left: 400px;
+    transform: rotate(-90deg);
+
+  }
+
+  .shadow {
+    width: 602px;
+    height: 816px;
+    top: -280px;
+    right: -42px;
+  }
+}

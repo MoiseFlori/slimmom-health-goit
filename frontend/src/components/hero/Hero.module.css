@@ -1,0 +1,29 @@
+.heroTitle {
+  width: 280px;
+  height: 50px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 140%;
+  letter-spacing: 0%;
+  color: var(--primary-color);
+  margin: 64px 20px 34px 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .heroTitle {
+    width: 704px;
+    height: 85px;
+    font-size: 34px;
+    margin: 134px 32px 68px 32px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .heroTitle {
+    width: 608px;
+    margin-top: 130px;
+    margin-left: 16px;
+  }
+
+
+}

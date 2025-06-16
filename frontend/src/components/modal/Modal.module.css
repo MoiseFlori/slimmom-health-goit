@@ -1,0 +1,149 @@
+.modal {
+  position: absolute;
+  top: 81px;
+  left: 0;
+  background-color: white;
+  height: 600px;
+  z-index: 9999;
+
+
+}
+
+.closeMobile {
+  border: none;
+  background: none;
+  width: 320px;
+  height: 40px;
+  background-color: #EFF1F3;
+  padding: 17px 288px 16px 20px;
+}
+
+.closeDesktop {
+  display: none;
+}
+
+.modalTitle {
+  width: 280px;
+  height: 50px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 140%;
+  letter-spacing: 0%;
+  margin: 40px 20px 42px 20px;
+}
+
+.calorieIntake {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 100%;
+  letter-spacing: 4%;
+  text-align: center;
+  color: #264061;
+  padding-bottom: 32px;
+  border-bottom: 1px solid #E0E0E0;
+}
+
+.modalContent {
+  padding: 20px;
+}
+
+.subtitle {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 4%;
+}
+
+.listOfFood {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: #9B9FAA;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 4%;
+  list-style: decimal;
+}
+
+.buttonSubmit {
+  width: 210px;
+  height: 43px;
+  padding: 13px 25px;
+  margin: 40px 0 100px 35px;
+  font-weight: 700;
+  font-style: 14px;
+  line-height: 17.01px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  color: #FFFFFF;
+  background-color: var(--secondary-color);
+  box-shadow: 0px 4px 10px 0px rgba(252, 132, 45, 0.5);
+}
+
+.buttonSubmit:active {
+  box-shadow: 0px -4px 10px 0px rgba(252, 132, 45, 0.5);
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 672px;
+    height: 572px;
+    top: 226px;
+    left: 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #E0E0E0;
+  }
+
+  .closeMobile {
+    display: none;
+  }
+
+
+  .closeDesktop {
+    display: block;
+    position: absolute;
+    border: none;
+    background: none;
+    width: 40px;
+    height: 20px;
+    top: 20px;
+    right: 40px;
+    transition: transform 0.3s ease;
+  }
+
+
+  .closeDesktop:hover {
+    transform: rotate(180deg);
+  }
+
+
+  .modalTitle {
+    width: 408px;
+    height: 70px;
+    text-align: center;
+    font-size: 26px;
+    margin: 64px 82px 20px 82px;
+  }
+
+  .calorieIntake {
+    width: 330px;
+  }
+
+  .modalContent {
+    align-self: flex-start;
+    padding-left: 171px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .modal {
+    top: 138px;
+    left: 304px;
+  }
+
+
+}
