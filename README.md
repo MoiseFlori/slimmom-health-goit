@@ -59,43 +59,78 @@
 
 ### Frontend (`/frontend`)
 
-````bash
+```bash
 npm run dev        # Start development server
 npm run build      # Build for production
 npm run preview    # Preview the production build
 npm run lint       # Lint project with ESLint
+```
 
 ### Backend (`/backend`)
-```bash
-node server.js    # Start server in production mode
 
-🚀 Getting Started
-1. Clone the repository
+```bash
+node server.js     # Start server in production mode
+npm run start:dev  # Start dev server with nodemon
+npm run lint       # Run ESLint checks
+npm run lint:fix   # Auto-fix lint issues
+```
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the repository
+
+```bash
 git clone https://github.com/MoiseFlori/slimmom-health-goit.git
 cd slimmom-health
+```
 
-2. Install frontend dependencies
+### 2. Install frontend dependencies
+
+```bash
 cd frontend
 npm install
+```
 
-3. Install backend dependencies
+### 3. Install backend dependencies
+
+```bash
 cd ../backend
 npm install
+```
 
-4. Configure environment variables
-Create a .env file in /backend:
+### 4. Configure environment variables
+
+Create a `.env` file inside `/backend`:
+
+```env
 PORT=your_port
 MONGODB_URI=your_mongo_connection_string
 JWT_SECRET=your_secret
 SENDGRID_API_KEY=your_api_key
+```
 
-5. Run development servers
+### 5. Run development servers
 
-# In one terminal
+#### In one terminal (backend)
+
+```bash
 cd backend
 node server.js
+```
 
-# In another terminal
+#### In another terminal (frontend)
+
+```bash
 cd frontend
 npm run dev
-````
+```
+
+---
+
+
+
+---
+
+**Made with ❤️ by Flori**
