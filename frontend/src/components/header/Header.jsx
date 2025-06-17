@@ -43,7 +43,7 @@ const Header = () => {
               />
               <source
                 srcSet={`${logoTablet} 1x, ${logoTablet2x} 2x`}
-                media={`(min-width: ${theme.breakpoints.tablet}) and (max-width: 1279px)`}
+                media={`(min-width: ${theme.breakpoints.tablet}) and (max-width: 1024px)`}
               />
               <source
                 srcSet={`${logoMobile} 1x, ${logoMobile2x} 2x`}

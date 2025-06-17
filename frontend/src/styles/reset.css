@@ -27,6 +27,8 @@ body {
   line-height: 1.5;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   -webkit-font-smoothing: antialiased;
+
+
 }
 
 
@@ -60,4 +62,33 @@ button {
   border: none;
   background: none;
 
+}
+ 
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--secondary-color) #f0f0f0;
+
+} 
+
+
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #f0f0f0;
+  border-radius: 4px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--secondary-color);
+  border-radius: 4px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: #0c0b0b;
 }
