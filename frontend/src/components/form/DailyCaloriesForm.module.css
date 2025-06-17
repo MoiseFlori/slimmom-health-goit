@@ -138,7 +138,6 @@ input::placeholder {
     height: 36px;
     margin: 0 0 8px 0;
     padding: 9px 0 0 3px;
-
     background-color: white;
     border-bottom: 1px solid #E0E0E0;
   }
@@ -146,7 +145,6 @@ input::placeholder {
   .buttonSubmit {
     position: absolute;
     top: 250px;
-
     left: 0;
     margin-bottom: 20px;
   }
@@ -160,6 +158,29 @@ input::placeholder {
 @media screen and (min-width: 1024px) {
   .formWrapper {
     margin: 68px 0 0 16px;
+  }
+
+  .input {
+    width: 180px;
+    height: 36px;
+    margin-bottom: 0px;
+  }
+
+  .buttonSubmit {
+    top: 250px;
+    left: 250px;
+  }
+
+}
+@media screen and (min-width: 1440px) {
+  .formWrapper {
+    margin: 68px 0 10px 56px;
+  }
+
+  .input {
+    width: 240px;
+    height: 36px;
+    margin-bottom: 0px;
   }
 
   .buttonSubmit {

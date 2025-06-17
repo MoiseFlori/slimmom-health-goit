@@ -58,7 +58,7 @@
     position: absolute;
     width: clamp(350px, 25vw, 398px);
     top: 95%;
-    right: -40px;
+    right: 0px;
     z-index: 998;
   }
 
@@ -85,7 +85,7 @@
     width: clamp(500px, 30vw, 553px);
     height: auto;
     top: -30vh;
-    right: -5vw;
+    right: 0vw;
     z-index: 0;
     object-fit: cover;
   }
@@ -112,8 +112,8 @@
   }
 
   .home .banana {
-    top: -35vh;
-    width: clamp(300px, 28vw, 364px);
+    top: -90vh;
+    width: clamp(400px, 28vw, 564px);
     z-index: 999;
   }
 
@@ -127,22 +127,22 @@
 
   .home .strawberry {
     width: clamp(250px, 32vw, 350px);
-    top: 18vh;
+    top: -30vh;
     right: 0;
   }
 
   .login .strawberry {
     position: absolute;
     width: clamp(300px, 25vw, 398px);
-    top: 45%;
-    right: -40px;
+    top: 55%;
+    right: 0px;
     z-index: 998;
   }
 
   .home .leaves {
-    width: clamp(500px, 50vw, 746px);
-    top: -35vh;
-    left: 35vw;
+    width: clamp(500px, 60vw, 746px);
+    top: -85vh;
+    left: 25vw;
     transform: rotate(-90deg);
   }
 
@@ -156,15 +156,15 @@
   }
 
   .home .shadow {
-    width: clamp(400px, 50vw, 602px);
-    top: -28vh;
-    right: -3vw;
+    width: clamp(400px, 50vw, 502px);
+    top: -80vh;
+    right: 0vw;
   }
 
   .login .shadow {
     position: absolute;
-    width: clamp(480px, 80vw, 653px);
-    height: 550px;
+    width: clamp(480px, 80vw, 583px);
+    height: 580px;
     top: 0vh;
     right: 0vw;
     z-index: 0;
@@ -173,61 +173,60 @@
 
 @media screen and (min-width: 1440px) {
   .home .banana {
-    top: -31vh;
-    right: 0;
-    width: 26.4vw;
+    top: -80vh;
+    width: clamp(400px, 28vw, 564px);
+    z-index: 999;
   }
 
   .login .banana {
     position: absolute;
     width: clamp(450px, 28vw, 664px);
-    top: -30vh;
+    top: -20vh;
     right: 0;
     z-index: 999;
   }
 
   .home .strawberry {
-    top: 20vh;
-    right: 2.7vw;
-    width: 25vw;
+    width: clamp(250px, 32vw, 350px);
+    top: -25vh;
+    right: 0;
   }
 
   .login .strawberry {
     position: absolute;
     width: clamp(300px, 25vw, 398px);
-    top: 25%;
-    right: -10px;
+    top: 45%;
+    right: 0px;
     z-index: 998;
   }
 
-
   .home .leaves {
-    top: -31vh;
+    width: clamp(500px, 60vw, 786px);
+    top: -85vh;
     left: 35vw;
-    width: 54vw;
+    transform: rotate(-90deg);
   }
-
 
   .login .leaves {
     position: absolute;
     width: clamp(650px, 80vw, 731px);
-    top: -30vh;
-    left: 30vw;
+    top: -20vh;
+    left: 35vw;
     z-index: 990;
     transform: rotate(-90deg);
   }
 
   .home .shadow {
-    top: -33vh;
-    right: 0;
-    width: 44.5vw;
+    width: clamp(500px, 80vw, 550px);
+    top: -70vh;
+    right: 0vw;
   }
 
   .login .shadow {
     position: absolute;
     width: clamp(480px, 80vw, 653px);
-    height: 650px;
-    top: -20vh;
+    height: 810px;
+    top: -15vh;
     right: 0vw;
     z-index: 0;
   }

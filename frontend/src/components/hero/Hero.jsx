@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Hero.module.css";
 import DailyCalorieForm from "../form/DailyCaloriesForm.jsx";
-
+import ImagesContainer from "./ImagesContainer.jsx";
 
 const Hero = () => {
   return (
@@ -11,7 +11,6 @@ const Hero = () => {
       </h2>
       <div className={styles.heroContent}>
         <DailyCalorieForm />
-
       </div>
     </section>
   );

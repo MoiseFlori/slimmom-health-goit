@@ -8,9 +8,13 @@ import styles from "./AppLayout.module.css";
 import leaves from "../assets/leaves.png";
 import leaves2x from "../assets/leaves2x.png";
 import ImagesContainer from "../components/hero/ImagesContainer";
+import { useLocation } from "react-router-dom";
 
 const AppLayout = () => {
   const user = useSelector((state) => state.auth.user);
+  const location = useLocation();
+  const showImagesContainer =
+    !user && ["/", "/login", "/register"].includes(location.pathname);
 
   return (
     <div className={styles.wrapper}>
@@ -18,6 +22,11 @@ const AppLayout = () => {
         <Header />
         <main className={styles.content}>
           <Outlet />
+        {showImagesContainer && (
+          <ImagesContainer
+            variant={location.pathname === "/" ? "home" : "login"}
+          />
+        )}
         </main>
       </div>
 
