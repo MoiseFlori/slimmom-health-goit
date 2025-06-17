@@ -106,8 +106,10 @@ Create a `.env` file inside `/backend`:
 
 ```env
 PORT=your_port
-MONGODB_URI=your_mongo_connection_string
+DB_URI=your_mongo_connection_string
 JWT_SECRET=your_secret
+EMAIL_API=your_email_api
+BASE_URL=your_base_url
 SENDGRID_API_KEY=your_api_key
 ```
 
